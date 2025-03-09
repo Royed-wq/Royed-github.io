@@ -1,51 +1,63 @@
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
     background-color: #000;
     color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* البنر */
 .banner img {
     width: 100%;
-    height: 200px;
+    height: 150px; /* تصغير البنر ليكون أقرب للصورة الأصلية */
     object-fit: cover;
 }
 
+/* الحاوية العامة */
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
 /* الصورة الشخصية */
-.profile {
-    margin-top: -50px;
-}
-
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* تصغير الصورة */
+    height: 80px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid black; /* حواف سوداء */
+    margin-right: 10px;
 }
 
-/* اسم المستخدم */
+/* النصوص */
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
-    font-size: 24px;
-    margin: 10px 0 5px;
-}
-
-p {
-    color: gray;
     font-size: 18px;
     margin: 0;
 }
 
+p {
+    color: gray;
+    font-size: 14px;
+    margin: 2px 0;
+}
+
 /* أيقونات وسائل التواصل */
 .social-icons {
-    margin-top: 20px;
+    margin: 10px 20px;
+    display: flex;
+    gap: 10px;
 }
 
 .social-icons a img {
-    width: 40px;
-    margin: 0 10px;
+    width: 30px;
     transition: transform 0.3s ease;
 }
 
