@@ -9,42 +9,42 @@ body {
     align-items: center;
 }
 
-/* الحاوية التي تحتوي على البنر والصورة الشخصية */
-.profile-banner {
-    position: relative;
-    width: 80%;
+/* Main container */
+.profile-container {
+    width: 100%;
     max-width: 600px;
-    margin: 20px auto;
     text-align: center;
+    margin-top: 20px;
 }
 
+/* Banner */
 .banner {
     width: 100%;
+    max-width: 400px;
     border-radius: 15px;
     display: block;
+    margin: 0 auto;
 }
 
-/* الصورة الشخصية */
+/* Avatar */
 .avatar {
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     border: 3px solid black;
     position: absolute;
-    left: 20px;
-    bottom: -20px;
+    left: 10px;
+    top: 65px;
 }
 
-/* المعلومات الشخصية */
+/* Profile info */
 .profile-info {
-    width: 80%;
-    max-width: 600px;
-    text-align: left;
-    margin-top: 40px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px 0;
 }
 
@@ -54,16 +54,16 @@ p {
     margin: 0;
 }
 
-/* أيقونات وسائل التواصل */
+/* Social icons */
 .social-icons {
     display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
+    justify-content: center;
     gap: 10px;
+    margin-top: 5px;
 }
 
 .social-icons a img {
-    width: 30px;
+    width: 25px;
     transition: transform 0.3s ease;
 }
 
