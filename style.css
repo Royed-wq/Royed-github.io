@@ -5,8 +5,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 /* Profile Container */
@@ -14,7 +15,7 @@ body {
     width: 100%;
     max-width: 400px;
     position: relative;
-    margin-top: 20px;
+    text-align: center;
 }
 
 /* Banner */
@@ -27,44 +28,44 @@ body {
 
 /* Avatar */
 .avatar {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 3px solid black;
     position: absolute;
-    top: 110px;  /* متداخل مع البنر */
-    left: 20px;  /* على اليسار */
+    top: 100px; /* متداخل مع البنر */
+    left: 50%;
+    transform: translateX(-50%);
     background-color: black;
 }
 
 /* Profile Info */
 .profile-info {
-    text-align: left;
-    margin: 40px 20px 0;
+    text-align: center;
+    margin-top: 50px;
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 5px 0;
 }
 
 p {
     color: gray;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
 }
 
 /* Social Icons */
 .social-icons {
     display: flex;
-    justify-content: flex-start; /* محاذاة لليسار */
-    gap: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .social-icons a img {
-    width: 25px;
+    width: 30px;
     transition: transform 0.3s ease;
 }
 
