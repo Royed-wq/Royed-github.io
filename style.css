@@ -1,91 +1,61 @@
-/* تنسيق عام للصفحة */
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+margin: 0;
+font-family: sans-serif;
+background-color: #000;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
 }
 
-/* تنسيق الحاوية الرئيسية */
 .container {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #111; /* لون خفيف لجعل المحتوى واضح */
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
-    position: relative;
+width: 100%;
+max-width: 400px;
+border-radius: 10px;
+overflow: hidden;
 }
 
-/* تنسيق صورة الخلفية */
 .background-image {
-    background-image: url('https://i.postimg.cc/pyb5xLm7/banner.gif'); /* تأكد من أن الرابط صحيح */
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    position: relative;
+background-image: url('background.gif');
+background-size: cover;
+background-position: center;
+height: 200px;
 }
 
-/* صورة البروفايل داخل الخلفية */
-.profile-picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff; /* إضافة حد أبيض لجعل الصورة بارزة */
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* تنسيق القسم الخاص بالمعلومات */
 .profile-section {
-    padding: 50px 20px 20px;
-    text-align: center;
+padding: 20px;
+text-align: center;
 }
 
-/* تنسيق الاسم */
+.profile-picture {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
 h2 {
-    margin: 10px 0 5px;
-    font-size: 1.5em;
+margin: 0;
+font-size: 1.5em;
 }
 
-/* تنسيق اسم المستخدم */
 .username {
-    color: #aaa;
-    margin-bottom: 15px;
+color: #aaa;
+margin-bottom: 15px;
 }
 
-/* أيقونات وسائل التواصل الاجتماعي */
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* إضافة تباعد متساوٍ بين الأيقونات */
+display: flex;
+justify-content: center;
 }
 
-/* أيقونات التواصل */
 .social-links a {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
+margin: 0 10px;
 }
 
-.social-links a:hover {
-    transform: scale(1.2); /* تكبير الأيقونة عند تمرير الماوس */
-}
-
-/* ضبط حجم الأيقونات */
 .social-links img {
-    width: 35px;
-    height: 35px;
-    filter: brightness(0.9); /* تقليل السطوع قليلاً */
-    transition: filter 0.3s ease-in-out;
-}
-
-.social-links a:hover img {
-    filter: brightness(1.2);
+width: 30px;
+height: 30px;
 }
